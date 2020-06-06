@@ -1,61 +1,6 @@
-<div class="main">
+<!-- <div class="main">
 
-  <!-- <div class="fixed-top">
-    <div class="collapse" id="navbarToggleExternalContent">
-      <div class="bg-dark p-4">
-        <h5 class="text-white h4">Collapsed content</h5>
-        <span class="text-muted">Toggleable via the navbar brand.</span>
-      </div>
-    </div>
-    <nav class="navbar navbar-dark bg-dark">
-      <button
-        class="navbar-toggler"
-        type="button"
-        data-toggle="collapse"
-        data-target="#navbarToggleExternalContent"
-        aria-controls="navbarToggleExternalContent"
-        aria-expanded="false"
-        aria-label="Toggle navigation"
-      >
-        <span class="navbar-toggler-icon"></span>
-      </button>
-    </nav>
-  </div> -->
-
-  <!-- <mat-sidenav-container class="example-container">
-    <mat-sidenav mode="side" #sidenav>
-      <ul fxLayout="column" fxLayoutGap="3rem">
-        <li>
-          <a routerLink="/home" (click)="sidenav.close()">Home</a>
-        </li>
-        <li>
-          <a routerLink="/aboutme" (click)="sidenav.close()">about Me</a>
-        </li>
-      </ul>
-    </mat-sidenav>
-    <mat-sidenav-content>
-      <mat-toolbar>
-        <div fxLayoutGap="1rem">
-          <button mat-icon-button (click)="sidenav.toggle()">
-            <mat-icon aria-hidden="false" class="icon">menu</mat-icon>
-          </button>
-        </div>
-  
-        <div fxFlex>
-          <ul fxLayout="row" fxLayoutGap="30px">
-            <li>
-              <a routerLink="/home">Home</a>
-            </li>
-            <li>
-              <a routerLink="/aboutme">About Me</a>
-            </li>
-          </ul>
-        </div>
-  
-        <a class="logo"></a>
-      </mat-toolbar>
-    </mat-sidenav-content>
-  </mat-sidenav-container> -->
+   /*sidenav*/
 
   <div class="img" fxLayoutAlign="center center">
     <h1 class="heading-primary" fxLayoutAlign="center center">
@@ -125,4 +70,153 @@
       </mat-card>
     </div>
   </div>
-</div>
+</div> -->
+
+<body class="main">
+  <div class="header">
+    <div class="head" fxLayout="row">
+      <div class="sidnav">
+        <mat-sidenav-container
+          class="example-container"
+          fxLayoutAlign="start center"
+        >
+          <mat-sidenav #sidenav mode="side" fxLayoutAlign="center center">
+            <mat-nav-list class="margintop">
+              <a mat-list-item routerLink="/home" (click)="sidenav.close()">
+                <mat-icon>home</mat-icon> <span class="nav-caption">Home</span>
+              </a>
+              <a mat-list-item routerLink="/aboutme" (click)="sidenav.close()">
+                <mat-icon>people</mat-icon>
+                <span class="nav-caption">AboutMe</span>
+              </a>
+              <a mat-list-item routerLink="/home" (click)="sidenav.close()">
+                <mat-icon>email</mat-icon>
+                <span class="nav-caption">ContactMe</span>
+              </a>
+            </mat-nav-list>
+          </mat-sidenav>
+          <mat-sidenav-content>
+            <button
+              class="btn-position"
+              mat-icon-button
+              (click)="sidenav.toggle()"
+            >
+              <mat-icon>menu</mat-icon>
+            </button>
+          </mat-sidenav-content>
+        </mat-sidenav-container>
+      </div>
+
+      <div
+        class="content"
+        fxFlex
+        fxLayoutAlign="center center"
+        fxLayout="column"
+      >
+        <div fxLayoutAlign="center center">
+          <mat-card
+            class="form-container"
+            fxLayoutAlign="center center"
+            fxLayout="column"
+          >
+            <!-- <div
+              class="cards, animation"
+              fxLayoutAlign="center center"
+              fxLayoutGap="10rem"
+            >
+              <mat-card
+                class="card"
+                fxLayoutAlign="start center"
+                fxLayout="column"
+              >
+                <mat-card-header>
+                  <mat-card-title>About me</mat-card-title>
+                </mat-card-header>
+
+                <mat-card-content>
+                  <p>
+                    The Shiba Inu is the smallest of the six original and
+                    distinct spitz breeds of dog from Japan. A small, agile dog
+                    that copes very well with mountainous terrain, the Shiba Inu
+                    was originally bred for hunting. The Shiba Inu is the
+                    smallest of the six original and distinct spitz breeds of
+                    dog from Japan. A small, agile dog that copes very well with
+                    mountainous terrain, the Shiba Inu was originally bred for
+                    hunting.The Shiba Inu is the smallest of the six original
+                    and distinct spitz breeds of dog from Japan. A small, agile
+                    dog that copes very well with mountainous terrain, the Shiba
+                    Inu was originally bred for hunting. The Shiba Inu is the
+                    smallest of the six original and distinct spitz breeds of
+                    dog from Japan. A small, agile dog that copes very well with
+                    mountainous terrain, the Shiba Inu was originally bred for
+                    hunting.
+                  </p>
+                </mat-card-content>
+                <mat-card-actions> </mat-card-actions>
+              </mat-card>
+            </div>
+
+            <div class="img2" fxLayoutAlign="center center">
+              <h1 class="heading-primary" fxLayoutAlign="center center">
+                <span class="heading-primary-main">It's all about Health</span>
+              </h1>
+            </div> -->
+
+            <div
+            class="cards, animation"
+            fxLayoutAlign="center center"
+            fxLayoutGap="10rem"
+          >
+            <mat-card class="card" fxLayoutAlign="start center" fxLayout="column">
+              <mat-card-header>
+                <mat-card-title>About me</mat-card-title>
+              </mat-card-header>
+  
+              <mat-card-content>
+                <p>
+                  The Shiba Inu is the smallest of the six original and distinct
+                  spitz breeds of dog from Japan. A small, agile dog that copes
+                  very well with mountainous terrain, the Shiba Inu was originally
+                  bred for hunting. The Shiba Inu is the smallest of the six
+                  original and distinct spitz breeds of dog from Japan. A small,
+                  agile dog that copes very well with mountainous terrain, the
+                  Shiba Inu was originally bred for hunting.
+                </p>
+              </mat-card-content>
+              <mat-card-actions>
+                <button
+                  mat-button
+                  class="card-button"
+                  fxLayoutAlign="center center"
+                  routerLink="/aboutme"
+                >
+                  Continue
+                </button>
+              </mat-card-actions>
+            </mat-card>
+  
+            <mat-card class="card" fxLayoutAlign="start center" fxLayout="column">
+              <mat-card-header>
+                <mat-card-title>Contact me</mat-card-title>
+              </mat-card-header>
+  
+              <mat-card-content>
+                <p>
+                  Maryam Hospital, West Arghavan Alley, 45 Meters Golshahr Ave,
+                  Karaj, Alborz, Iran<br />
+                  +982633509323<br />
+                  +982633502347<br />
+                  info@maryamhospital.ir<br />
+                  maryamhospital.ir@gmail.com
+                </p>
+              </mat-card-content>
+              <mat-card-actions> </mat-card-actions>
+            </mat-card>
+          </div>
+
+          </mat-card>
+        </div>
+      </div>
+    </div>
+  </div>
+</body>
